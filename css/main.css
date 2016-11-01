@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Marker_Felt_Wide';
+    src: url('fonts/mafw____-webfont.eot');
+    src: url('fonts/mafw____-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/mafw____-webfont.woff2') format('woff2'),
+         url('fonts/mafw____-webfont.woff') format('woff'),
+         url('fonts/mafw____-webfont.ttf') format('truetype'),
+         url('fonts/mafw____-webfont.svg#Marker_Felt_Wide') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background-color: #2c261c;
+	margin: 0;
+	padding: 0;
+	font: 1em/101% 'Marker_Felt_Wide', arial, sans-serif;
+}
+
+.clearFix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+#container {
+	margin: 0 auto;
+	width: 640px;
+	height: 960px;
+	background: url('../images/bg_main.jpg') no-repeat center top;
+	position: relative;
+}
+
+#top {
+	height: 82%;
+	position: relative;
+}
+#top figure {margin: 0;}
+#top #tacos {
+	width: 281px;
+	height: 234px;
+	position: absolute;
+	top: 75px;
+	left: 290px;
+	opacity: 0;
+	-ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    -webkit-backface-visibility: hidden;
+    transform: rotate(4deg);
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+
+}
+#top #tacos.show{
+	opacity: 1;
+}
+#top #tacos img {
+	-webkit-box-shadow: 1px 1px 20px 1px #000000;
+	box-shadow: 1px 1px 20px 1px #000000;
+}
+
+#top #soccerBall {
+	width: 168px;
+	height: 186px;
+	position: absolute;
+	top: 370px;
+	left: 98px;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+} 
+
+#top #soccerBall.show{
+	opacity: 1;
+}
+
+#bottom {position: relative;}
+
+#bottom .btnLeft {
+	background: url('../images/sprite_buttons.png') no-repeat -919px -50px;
+	width: 120px;
+	height: 159px;
+	display: block;
+	float: left;
+	-webkit-tap-highlight-color:transparent
+}
+#bottom .mainInput {
+	background: url('../images/bg_textfield.png') no-repeat left top;
+	width: 388px;
+	height: 119px;
+	float: left;
+	position: relative;
+	top: 39px;
+	margin: 0 6px;
+}
+#bottom .mainInput input {
+	background: none;
+	margin: 25px 0 0 15px;
+	color: #fff;
+	font: 1.3em 'Marker_Felt_Wide', arial, sans-serif;
+	border: none;
+	width: 350px;
+	letter-spacing: .1em;
+}
+input[type="text"]:focus{
+font-size: 16px; /* Adding 16px on focus will prevent page zoom */
+}
+#bottom .mainInput input::-webkit-input-placeholder {
+   color: #fff;
+}
+#bottom .mainInput input:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+#bottom .mainInput input::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+#bottom .mainInput input:-ms-input-placeholder {  
+   color: #fff;  
+}
+
+#bottom .btnRight {
+	background: url('../images/sprite_buttons.png') no-repeat -1325px -50px;
+	width: 120px;
+	height: 159px;
+	display: block;
+	float: left;
+	-webkit-tap-highlight-color:transparent
+}
+#bottom .btnLeft:active {background-position: -1053px -50px}
+#bottom .btnRight:active {background-position: -1193px -50px}
